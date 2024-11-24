@@ -1,0 +1,230 @@
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+header {
+  background-color: #f8f8f8;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+header .logo {
+  font-weight: 700;
+  font-size: 24px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-list a:hover {
+  color: #007bff;
+}
+
+.contact-info {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #777;
+  transition: color 0.3s;
+}
+
+.contact-info a:hover {
+  color: #007bff;
+}
+
+.hero {
+  background-color: #2a2a2a;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+.features {
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features-list li {
+  text-align: center;
+  width: 22%;
+}
+
+.features-list img {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.specialization {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.specialization h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.work-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.work-list img {
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.work-list img:hover {
+  transform: scale(1.05);
+}
+
+.team {
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+.team h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.team-list li {
+  text-align: center;
+  width: 22%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s;
+}
+
+.team-list li:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.team-list img {
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+footer {
+  background-color: #2a2a2a;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+footer .logo {
+  font-weight: 700;
+  color: #007bff;
+  text-decoration: none;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.footer-info {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.footer-info a {
+  color: #777;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-info a:hover {
+  color: #007bff;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 20px 0 0 0;
+}
+
+.social-links a img {
+  width: 30px;
+  transition: transform 0.3s;
+}
+
+.social-links a:hover img {
+  transform: scale(1.2);
+}
