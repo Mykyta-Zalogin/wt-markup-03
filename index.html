@@ -4,20 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevStudio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- Header Section -->
     <header>
-      <div>
+      <div class="container">
         <a href="./index.html" class="logo">DevStudio</a>
         <nav>
-          <ul>
+          <ul class="nav-list">
             <li><a href="#">Про нас</a></li>
             <li><a href="#">Портфоліо</a></li>
             <li><a href="#">Контакти</a></li>
           </ul>
         </nav>
-        <ul>
+        <ul class="contact-info">
           <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
           <li><a href="tel:+380680011101">+38 068 001 11 01</a></li>
         </ul>
@@ -26,28 +31,32 @@
 
     <!-- Hero Section -->
     <main>
-      <section>
+      <section class="hero">
         <h1>Ми створюємо легкі рішення складних завдань для вашого бізнеса</h1>
-        <button type="button">Замовити послугу</button>
+        <button type="button" class="cta-button">Замовити послугу</button>
       </section>
 
       <!-- Features Section -->
-      <section>
+      <section class="features">
         <h2>Особливості</h2>
-        <ul>
+        <ul class="features-list">
           <li>
+            <img src="./images/icon-detail.svg" alt="Увага до деталей" />
             <h3>Увага до деталей</h3>
             <p>Опис особливості...</p>
           </li>
           <li>
+            <img src="./images/icon-punctuality.svg" alt="Пунктуальність" />
             <h3>Пунктуальність</h3>
             <p>Опис особливості...</p>
           </li>
           <li>
+            <img src="./images/icon-planning.svg" alt="Планування" />
             <h3>Планування</h3>
             <p>Опис особливості...</p>
           </li>
           <li>
+            <img src="./images/icon-technology.svg" alt="Сучасні технології" />
             <h3>Сучасні технології</h3>
             <p>Опис особливості...</p>
           </li>
@@ -55,9 +64,9 @@
       </section>
 
       <!-- Specialization Section -->
-      <section>
+      <section class="specialization">
         <h2>Роботи, на яких спеціалізуємось</h2>
-        <ul>
+        <ul class="work-list">
           <li>
             <img src="./images/code-image.jpg" alt="Coding" width="370" />
           </li>
@@ -75,34 +84,34 @@
       </section>
 
       <!-- Team Section -->
-      <section>
+      <section class="team">
         <h2>Наша команда</h2>
-        <ul>
+        <ul class="team-list">
           <li>
-            <img src="./images/member1.jpg" alt="Betty Foirz" width="270" />
+            <img src="./images/member1.jpg" alt="Betty Foriz" width="270" />
             <p>
-              <span>Betty Fox</span><br />
+              <span>Betty Foriz</span><br />
               <span>Product Designer</span>
             </p>
           </li>
           <li>
             <img src="./images/member2.jpg" alt="Folke Boske" width="270" />
             <p>
-              <span>Felix Broks</span><br />
+              <span>Folke Boske</span><br />
               <span>Frontend Developer</span>
             </p>
           </li>
           <li>
             <img src="./images/member3.jpg" alt="Milo Dito" width="270" />
             <p>
-              <span>Mila Diaz</span><br />
+              <span>Milo Dito</span><br />
               <span>Marketing</span>
             </p>
           </li>
           <li>
-            <img src="./images/member4.jpg" width="270" alt="Лія Спенцер" />
+            <img src="./images/member4.jpg" alt="Лія Спенцер" width="270" />
             <p>
-              <span>Lia Spenzer</span><br />
+              <span>Лія Спенцер</span><br />
               <span>UI Designer</span>
             </p>
           </li>
@@ -112,14 +121,38 @@
 
     <!-- Footer Section -->
     <footer>
-      <a href="./index.html" class="logo">DevStudio</a>
-      <address>
-        <ul>
-          <li>м. Харків, вул. Ярослава Мудрого, 16</li>
-          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a href="tel:+380680011101">+38 068 001 11 01</a></li>
+      <div class="container">
+        <a href="./index.html" class="logo">DevStudio</a>
+        <address>
+          <ul class="footer-info">
+            <li>м. Харків, вул. Ярослава Мудрого, 16</li>
+            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a href="tel:+380680011101">+38 068 001 11 01</a></li>
+          </ul>
+        </address>
+        <ul class="social-links">
+          <li>
+            <a href="#"
+              ><img src="./images/icon-instagram.svg" alt="Instagram"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/icon-twitter.svg" alt="Twitter"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/icon-facebook.svg" alt="Facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/icon-linkedin.svg" alt="LinkedIn"
+            /></a>
+          </li>
         </ul>
-      </address>
+      </div>
     </footer>
   </body>
 </html>
