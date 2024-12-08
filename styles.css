@@ -72,7 +72,7 @@ header .logo .studio {
 }
 
 .contact-info .contact-link:nth-of-type(2) {
-  color: #777; /* Номер телефону сірий */
+  color: #777;
   text-decoration: none;
 }
 
