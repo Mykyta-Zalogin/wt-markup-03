@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fff;
+  text-decoration: none;
 }
 
 .container {
@@ -51,19 +52,8 @@ header .logo .studio {
   transition: color 0.3s;
 }
 
-.nav-list .nav-link:hover {
-  text-decoration: underline;
-}
-
-.nav-list .nav-link {
-  text-decoration: none;
+.nav-list .nav-link[href*="Про нас"] {
   color: #007bff;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-.nav-list .nav-link:hover {
-  text-decoration: underline;
 }
 
 .contact-info {
@@ -82,22 +72,8 @@ header .logo .studio {
 }
 
 .contact-info .contact-link:nth-of-type(2) {
-  color: #777;
-}
-
-.contact-info .contact-link:hover {
-  text-decoration: underline;
-}
-
-.contact-info .contact-link {
+  color: #777; /* Номер телефону сірий */
   text-decoration: none;
-  color: #007bff;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-.contact-info .contact-link:hover {
-  text-decoration: underline;
 }
 
 .hero {
@@ -253,6 +229,11 @@ footer .logo .studio {
 
 .footer-info a:hover {
   color: #007bff;
+}
+
+.footer-info a:nth-of-type(3) {
+  color: #777;
+  text-decoration: none;
 }
 
 .social-links {
