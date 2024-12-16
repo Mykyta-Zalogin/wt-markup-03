@@ -1,0 +1,759 @@
+/* Базові стилі */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Контейнер */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Заголовок */
+header {
+  background-color: #fafafa;
+  padding: 20px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.header-left h1 {
+  font-size: 24px;
+}
+
+.dev {
+  color: #007bff;
+}
+
+.studio {
+  color: #000000;
+}
+
+/* Меню навігації */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  color: #000; /* Чорний за замовчуванням */
+  transition: color 0.3s ease; /* Анімація кольору */
+}
+
+nav ul li a:hover {
+  color: #007bff; /* Синій при наведенні */
+}
+
+/* Контактна інформація */
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-info a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000; /* Чорний за замовчуванням */
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #007bff; /* Синій при наведенні */
+}
+
+/* Стилізація іконок */
+.icon-envelope,
+.icon-phone {
+  margin-right: 8px;
+  fill: currentColor;
+}
+
+.icon-envelope {
+  width: 16px;
+  height: 12px;
+}
+
+.icon-phone {
+  width: 10px;
+  height: 16px;
+}
+
+/* Посилання на телефон */
+.contact-info a.phone {
+  color: #777; /* Сірий колір за замовчуванням */
+}
+
+.contact-info a.phone:hover {
+  color: #007bff; /* Синій при наведенні */
+}
+
+/* Секція hero */
+.hero {
+  background-color: #2a2a2a;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.hero .button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.features {
+  padding: 50px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.features .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.feature {
+  text-align: left; /* Вирівнювання тексту по лівій стороні */
+  width: 23%;
+}
+
+.icon-wrapper {
+  background-color: #f5f4fa; /* Світлий фон рамки */
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 15px; /* Вирівнювання по центру та відступ від тексту */
+  border-radius: 4px; /* Закруглені кути */
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  fill: var(--color1, #212121);
+}
+
+.feature h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #333;
+  text-align: left; /* Вирівнювання заголовку */
+}
+
+.feature p {
+  font-size: 14px;
+  color: #777;
+  margin: 0;
+  text-align: left; /* Вирівнювання тексту опису */
+}
+
+/* Адаптивність */
+@media (max-width: 1024px) {
+  .features .container {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .feature {
+    width: 45%;
+  }
+
+  .icon-wrapper {
+    width: 200px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .feature {
+    width: 100%;
+  }
+}
+
+/* Секція "Роботи" */
+.specialization {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.work-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.work-images img {
+  max-width: 370px;
+  height: 294px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Секція "Наша команда" */
+.team {
+  background-color: #f5f4fa;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: bold; /* Додано для підкреслення */
+  text-align: center; /* Центрування тексту */
+  margin-bottom: 20px; /* Зменшений відступ знизу */
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.member {
+  width: 23%; /* Ширина картки */
+  background-color: white; /* Білий фон для картки */
+  border-radius: 0 0 5px 5px; /* Закруглення тільки нижніх кутів */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Легка тінь */
+  display: flex; /* Використовуємо флекс-блок для вирівнювання */
+  flex-direction: column; /* Вирівнюємо елементи по вертикалі */
+  align-items: center; /* Центруємо контент */
+  text-align: center; /* Вирівнюємо текст по центру */
+  padding-bottom: 20px; /* Відступ знизу */
+}
+
+.member img {
+  width: 100%; /* Зображення займає всю ширину */
+  border-radius: 5px 5px 0 0; /* Закруглення верхніх кутів */
+  margin-bottom: 15px; /* Відступ між зображенням і текстом */
+  display: block;
+}
+
+.member h3 {
+  font-size: 18px; /* Розмір тексту заголовка */
+  margin: 0; /* Прибираємо зайві відступи */
+  font-weight: bold; /* Напівжирний текст */
+  color: #333;
+}
+
+.member p {
+  font-size: 14px; /* Розмір тексту підзаголовка */
+  color: #777; /* Сірий колір */
+  margin: 5px 0 0; /* Невеликий відступ між заголовком і текстом */
+}
+
+/* Центрування секції команда */
+.team-members {
+  display: flex;
+  justify-content: space-between; /* Рівномірний розподіл карток */
+  align-items: flex-start; /* Вирівнювання по верхньому краю */
+  gap: 20px; /* Відступ між картками */
+  flex-wrap: nowrap; /* Забороняємо перенос елементів */
+}
+
+/* Адаптивність */
+@media (max-width: 1024px) {
+  .team-members {
+    flex-wrap: wrap; /* Дозволяємо перенос на наступний ряд */
+    gap: 20px;
+  }
+
+  .member {
+    width: 45%; /* Зменшуємо ширину карток для мобільних пристроїв */
+    margin-bottom: 20px; /* Відступ між рядами */
+  }
+}
+
+footer {
+  background-color: #2a2a2a;
+  color: #ffffff;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-between; /* Розподіл секцій */
+  align-items: flex-start; /* Вирівнювання по верхньому краю */
+  gap: 40px; /* Відстань між секціями */
+}
+
+.footer-left {
+  flex: 1;
+}
+
+.footer-left address {
+  font-style: normal;
+  line-height: 1.5;
+}
+
+/* Сірий колір для контактів у футері */
+.footer-left address a,
+.footer-left address {
+  color: #777777; /* Сірий колір */
+  text-decoration: none; /* Видаляє підкреслення */
+  transition: color 0.3s ease; /* Плавна анімація зміни кольору */
+}
+
+/* Білий колір для конкретного тексту адреси */
+.footer-left address {
+  color: #ffffff; /* Білий колір */
+}
+
+.footer-left address a {
+  color: #777777; /* Лінки залишаються сірими */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-left address a:hover {
+  color: #007bff; /* Синій при наведенні */
+}
+
+.footer-left address a:hover {
+  color: #007bff; /* Синій колір при наведенні */
+}
+
+.footer-center {
+  flex: 1;
+  text-align: center; /* Центрування елементів секції */
+}
+
+.footer-center h4 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.footer-center .social-icons {
+  display: flex;
+  justify-content: center; /* Центрування іконок */
+  gap: 15px; /* Відстань між іконками */
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: #afb1b8;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.icon-wrapper:hover {
+  background-color: #007bff;
+}
+
+.icon-wrapper .icon {
+  width: 20px;
+  height: 20px;
+  fill: rgba(255, 255, 255, 0.1); /* Білий із прозорістю 10% */
+  transition: fill 0.3s ease;
+}
+
+.icon-wrapper:hover .icon {
+  fill: #ffffff; /* Білий при наведенні */
+}
+
+.footer-right {
+  flex: 1;
+  text-align: right; /* Вирівнювання по правому краю */
+}
+
+.footer-right h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center; /* Центрування інпуту та кнопки */
+  gap: 10px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #424242;
+  border-radius: 5px;
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+.newsletter-form input::placeholder {
+  color: #777777;
+}
+
+.newsletter-form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #0056b3;
+}
+
+.newsletter-form .icon {
+  width: 24px;
+  height: 24px;
+  fill: #ffffff;
+}
+
+.footer-left h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+footer .footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+footer h1 .dev {
+  color: #007bff; /* Синій колір для Dev */
+}
+
+footer h1 .studio {
+  color: #fff; /* Білий колір для Studio */
+}
+
+footer p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+footer a {
+  color: #777;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #007bff;
+}
+
+/* Іконки соціальних мереж */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Відстань між іконками */
+  margin-top: 10px; /* Відступ від тексту */
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff; /* Білий колір рамки за замовчуванням */
+  border-radius: 50%; /* Форма кола */
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.icon-wrapper:hover {
+  border-color: #007bff; /* Синя рамка при наведенні */
+  background-color: #007bff; /* Синє тло при наведенні */
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: #777; /* Сірий колір за замовчуванням */
+  transition: fill 0.3s ease;
+}
+
+.icon-wrapper:hover .icon {
+  fill: #fff; /* Білий колір іконки при наведенні */
+}
+
+.features .icon-wrapper {
+  background-color: #f5f4fa; /* Світлий фон рамки */
+  width: 270px; /* Ширина рамки */
+  height: 120px; /* Висота рамки */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 15px; /* Вирівнювання по центру та відступ від тексту */
+  border-radius: 4px; /* Закруглені кути */
+}
+
+.features .icon {
+  width: 48px;
+  height: 48px;
+  fill: var(--color1, #212121); /* Початковий колір іконки */
+}
+
+.footer {
+  background-color: #212121;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+}
+
+.footer-logo {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.footer-logo span {
+  color: #2196f3;
+}
+
+address {
+  font-style: normal;
+  line-height: 1.5;
+}
+
+address a {
+  color: #fff;
+  text-decoration: none;
+}
+
+address a:hover {
+  text-decoration: underline;
+}
+
+.footer-center h4,
+.footer-right h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.icon-wrapper:hover {
+  border-color: #2196f3;
+  background-color: #2196f3;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  transition: fill 0.3s ease;
+}
+
+.icon-wrapper:hover .icon {
+  fill: #fff;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #424242;
+  border-radius: 5px;
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.newsletter-form input::placeholder {
+  color: #777;
+}
+
+.newsletter-form button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2196f3;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #1976d2;
+}
+
+.newsletter-form .icon {
+  fill: #fff;
+  width: 16px;
+  height: 16px;
+}
+
+/* Стилі для іконок у розділі "Наша команда" */
+.team .icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px; /* Розмір кола */
+  height: 40px;
+  border: 2px solid #ffffff; /* Білий колір рамки */
+  border-radius: 50%; /* Форма кола */
+  background-color: #ffffff; /* Фон кола білий */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Відновлення іконок в "Наша команда" */
+.team .icon-wrapper .icon {
+  fill: #777; /* Сірий колір за замовчуванням */
+}
+
+.team .icon-wrapper:hover .icon {
+  fill: #ffffff; /* Білий при наведенні */
+}
+
+.team .icon-wrapper:hover {
+  border-color: #007bff; /* Синя рамка при наведенні */
+  background-color: #007bff; /* Синій фон при наведенні */
+}
+
+.team .icon {
+  width: 20px; /* Розмір іконки */
+  height: 20px;
+  fill: #afb1b8; /* Колір іконки за замовчуванням */
+  transition: fill 0.3s ease; /* Плавна зміна кольору */
+}
+
+.team .icon-wrapper:hover .icon {
+  fill: #fff; /* Білий колір іконки */
+}
+
+/* Footer іконки */
+.footer .icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #424242; /* Сірий колір рамки */
+  border-radius: 50%; /* Кругла рамка */
+  transition: border-color 0.3s ease;
+}
+
+.footer .icon-wrapper:hover {
+  border-color: #007bff; /* Синя рамка */
+}
+
+.footer .icon {
+  width: 20px;
+  height: 20px;
+  fill: #fff; /* Білий колір іконки */
+}
+
+/* Соціальні іконки у секції "Приєднуйтесь" */
+.footer .social-icons .icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1); /* Прозорий білий фон */
+  border-radius: 50%; /* Кругла форма */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.footer .social-icons .icon {
+  fill: #ffffff; /* Сірий колір іконок за замовчуванням */
+  transition: fill 0.3s ease;
+}
+
+.footer .social-icons .icon-wrapper:hover {
+  background-color: #007bff; /* Синій фон при наведенні */
+}
+
+.footer .social-icons .icon-wrapper:hover .icon {
+  fill: #ffffff; /* Білий колір іконок при наведенні */
+}
+
+.newsletter-form .subscribe-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Відступ між текстом і іконкою */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2196f3; /* Синій фон */
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form .subscribe-btn:hover {
+  background-color: #1976d2; /* Темніший синій при наведенні */
+}
+
+.newsletter-form .subscribe-btn .icon {
+  width: 24px;
+  height: 24px;
+  fill: #fff; /* Білий колір іконки */
+  transition: fill 0.3s ease;
+}
