@@ -15,8 +15,35 @@ body {
 
 /* Заголовок */
 header {
-  background-color: #fafafa;
-  padding: 20px 0;
+  position: relative; /* Батьківський елемент для позиціонування */
+  width: 1600px; /* Ширина */
+  height: 80px; /* Висота */
+  background-color: #ffffff; /* Білий фон */
+  margin: 0 auto; /* Центрування по горизонталі */
+  display: flex; /* Використання флекса для вирівнювання */
+  justify-content: space-between; /* Розташування елементів по краях */
+  align-items: center; /* Вирівнювання по вертикалі */
+  padding: 0 20px; /* Внутрішні відступи з боків */
+  box-sizing: border-box; /* Урахування padding у ширині */
+  border-bottom: 1px solid #ccc; /* Додаткова рамка знизу (опціонально) */
+}
+
+.about {
+  position: absolute; /* Абсолютне позиціонування */
+  top: 32px; /* Координата по осі Y */
+  left: 454px; /* Координата по осі X */
+}
+
+.portfolio {
+  position: absolute; /* Абсолютне позиціонування */
+  top: 32px; /* Координата по осі Y */
+  left: 553px; /* Координата по осі X */
+}
+
+.contacts {
+  position: absolute; /* Абсолютне позиціонування */
+  top: 32px; /* Координата по осі Y */
+  left: 680px; /* Координата по осі X */
 }
 
 .header-content {
@@ -108,15 +135,20 @@ nav ul li a:hover {
 
 /* Секція hero */
 .hero {
-  background-color: #2a2a2a;
+  background-color: #2f303a;
   color: white;
-  padding: 100px 0;
-  text-align: center;
+  padding: 100px 0; /* Верхній і нижній відступ */
+  text-align: center; /* Центрування тексту по горизонталі */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Центрування по вертикалі */
+  align-items: center; /* Центрування по горизонталі */
 }
 
 .hero h2 {
   font-size: 32px;
   margin-bottom: 20px;
+  text-align: center; /* Центрування тексту */
 }
 
 .hero .button {
@@ -526,7 +558,7 @@ footer a:hover {
 }
 
 .footer {
-  background-color: #212121;
+  background-color: #2f303a;
   color: #fff;
   padding: 40px 20px;
 }
@@ -576,6 +608,56 @@ address a:hover {
 .social-icons {
   display: flex;
   gap: 10px;
+}
+
+.join-us-icons {
+  display: flex; /* Розташування іконок у ряд */
+  justify-content: left; /* Вирівнювання по центру */
+  gap: 10px; /* Відстань між іконками */
+  margin-right: 80px; /* Відступ ліворуч */
+}
+
+.join-us-title {
+  text-align: left; /* Вирівнювання заголовка по центру */
+  color: #ffffff; /* Білий колір тексту */
+  margin-right: 80px; /* Відступ ліворуч */
+}
+
+/* Блок "Підпишись на розсилку" */
+.subscribe-section {
+  display: flex;
+  flex-direction: column; /* Елементи розташовані вертикально */
+  align-items: flex-start; /* Вирівнювання по лівому краю */
+  margin-right: 20px; /* Додатковий відступ зліва, якщо потрібно */
+}
+
+/* Заголовок "Підпишись на розсилку" */
+.subscribe-title {
+  text-align: left; /* Вирівнює текст заголовка по лівому краю */
+  margin-bottom: 10px; /* Відступ вниз від заголовка */
+}
+
+/* Форма підписки */
+.newsletter-form {
+  display: flex;
+  justify-content: flex-start; /* Вирівнювання вмісту форми по лівому краю */
+  gap: 10px; /* Відстань між інпутом і кнопкою */
+}
+
+/* Поле E-mail */
+.newsletter-form input[type="email"] {
+  width: 358px; /* Ширина інпуту */
+  height: 30px; /* Висота інпуту */
+  padding: 10px; /* Внутрішній відступ для тексту */
+  font-size: 16px; /* Розмір шрифту */
+  border: 1px solid #424242; /* Колір рамки */
+  border-radius: 5px; /* Закруглені кути */
+  background-color: #2f303a; /* Фон інпуту */
+  color: #ffffff; /* Колір тексту */
+}
+
+.newsletter-form input[type="email"]::placeholder {
+  color: #777777; /* Колір плейсхолдера */
 }
 
 .icon-wrapper {
@@ -756,4 +838,25 @@ address a:hover {
   height: 24px;
   fill: #fff; /* Білий колір іконки */
   transition: fill 0.3s ease;
+}
+
+.hero .button-order {
+  display: inline-block;
+  width: 200px; /* Ширина кнопки */
+  height: 50px; /* Висота кнопки */
+  background-color: #2196f3; /* Синій фон */
+  color: white; /* Білий текст */
+  text-align: center;
+  line-height: 50px; /* Вирівнювання тексту по центру */
+  text-decoration: none;
+  border-radius: 5px; /* Закруглені кути */
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Ефект наведення */
+.hero .button-order:hover {
+  background-color: #1976d2; /* Темніший синій */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Тінь при наведенні */
 }
